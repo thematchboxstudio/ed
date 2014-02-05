@@ -3,6 +3,4 @@ ed
 
 The Elizabeth and David site files.
 
-This is the blank readme file.
-
-Josh is the best.
+Varidoc files are located in the XMPIE folder inside the mb theme.
