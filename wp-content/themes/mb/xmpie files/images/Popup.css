@@ -1,0 +1,537 @@
+/* Resets */	
+div, header, nav, ul, li, body {
+	padding: 0;
+	margin: 0;
+}
+
+body {	
+	color: #333333;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+
+html 
+{
+	background-color: #ffffff !important;
+	background-image: none !important;
+}
+
+ul {
+	list-style-type: none;
+}
+
+.popupContentInner
+{
+	padding: 10px;
+}
+
+.popupFooter  
+{
+	border-top: 1px #d0d0d0 solid;
+	padding: 5px;
+	background: #fbfbfb;
+	background: -moz-linear-gradient(top, #f7f7f7, #fbfbfb 100%);
+	background: -webkit-linear-gradient(top, #f7f7f7,#fbfbfb 100%);
+	background: -o-linear-gradient(top, #f7f7f7,#fbfbfb 100%);
+	background: -ms-linear-gradient(top, #f7f7f7,#fbfbfb 100%);
+	background: linear-gradient(top, #f7f7f7,#fbfbfb);
+}
+
+/* for new elements in old browsers */
+article, aside, figure, footer, header, hgroup, nav, section { 
+	display: block; 
+}
+
+HR
+{
+	color: #a0a0a0;
+	height: 1px;
+}
+
+TD.LeftMargin
+{
+    background-image: url(popup_bg_topcorner.gif);
+	background-repeat: no-repeat;  
+	width:22px;
+}
+
+TD.HeadingBg
+{
+	font-size: 13px;
+	font-weight: bold;
+	color: #ffffff;
+	background-image: url(popup_bg_title.gif);
+	background-repeat: repeat-x;
+	height: 33px;
+	padding-left: 5px;
+}
+
+TD.SubHeadingBg
+{
+	font-size: 11px;
+	font-weight: bold;
+	color: #000000;
+	background-image: url(popup_bg_subtitle.gif);
+	background-repeat: repeat-x;
+	height: 29px;
+	padding-left: 5px;
+}
+
+TD.ContentArea
+{
+	padding: 15px;
+}
+
+/*  Images  */
+.SelectedAsset
+{
+	background: #0068A3;
+	border:none;
+	border-color: #00ffff;
+}
+
+.UnselectedAsset
+{
+	background: #FFFFFF;
+	border:none;
+	border-color: #00ffff;
+	cursor:hand;
+}
+/*
+.SmallItalic
+{
+	FONT-SIZE: 10px;
+	FONT-WEIGHT: normal;
+	FONT-STYLE: italic;
+}
+*/
+a, .link
+{
+	color:#006699;
+	text-decoration:none;
+}
+
+.bold
+{
+	font-weight: bold;
+}
+
+.BigLabel
+{
+	font-size: 13px;
+	color: #525252;
+}
+
+.SmallLabel
+{
+	font-size: 11px;
+	color: #525252;
+}
+
+A.BigLink
+{
+	font-size: 13px;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+A.BigLink:hover
+{
+	font-size: 13px;
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+A.SmallLink
+{
+	font-size: 11px;
+	font-weight: normal;
+	text-decoration: none;
+}
+
+A.SmallLink:hover
+{
+	text-decoration: underline;
+}
+
+/*  PublicPCWarning */
+.OptionsList
+{
+	text-indent: -3px;
+}
+
+.OptionsList INPUT,LABEL
+{
+	vertical-align:middle;
+}
+.OptionsList INPUT
+{
+	margin-top: 0;
+}
+.OptionsList LABEL
+{
+	margin-right:10px;
+}
+.FormLabel
+{
+	font-size: 13px;
+	font-weight: bold;
+}
+.FormField
+{
+	font-size: 12px;
+	font-weight: normal;
+}
+
+.productunits {
+	color: #666666;
+	font-size: 11px;
+	font-variant: normal;
+	font-weight: normal;
+}
+/* Product Preview Styles START */
+.TopPanelLink
+{
+	cursor:pointer; 
+}
+
+.Dots
+{
+	vertical-align:text-bottom !important;
+}
+.PagerNumber
+{
+	padding:2px;
+	text-decoration:none;
+	vertical-align:super;
+}
+.PagerMarkedNumber
+{
+	font-weight:bold;
+	color: #044165;
+}
+.AlignLeft
+{
+	text-align:left;
+}
+.AlignRight
+{
+	text-align:right;
+}
+.Padded 
+{
+	 padding:15px;
+}
+#divImageName
+{
+	max-width: 20%;
+}
+#divProofSize
+{
+	padding-left: 10px;
+	width: 30%;
+}
+#divPager
+{
+	padding-right: 10px;
+	width:50%;
+}
+.TopPanel
+{
+	width:100%; 
+	background-image:url(Blue_strip.jpg);
+	margin-bottom:10px;
+	height:37px;
+	font-size: 12px;
+	color:#006198;
+}
+/* Product Preview Styles END */
+
+.RequiredFieldMarker
+{
+	color: Red;
+	font-weight:bold;
+	vertical-align: middle;
+}
+
+.roundedCorners
+{
+	padding: 0;
+	-moz-border-radius: 7px;
+	-webkit-border-radius: 7px;
+	border-radius: 7px;
+	border: solid 1px #000000;
+}
+
+.divOptionRepeater.selected .imgIconWrapper
+{
+	border: solid 3px #87A01F;
+}
+
+#divClearFloat
+{
+	clear:left;
+}
+
+.TallButton
+{
+	height: 32px;
+	line-height: 32px;
+}
+
+.WizardButtonsContainer > div
+{
+	margin-right: 12px;
+}
+
+/*input, select, textarea */
+
+input, select, textarea
+{
+	border: 1px solid #d0d0d0;
+	color: #333333;
+	margin-top: 2px;
+}
+
+input[type="checkbox"], input[type="radio"]
+{
+	border: 0 none;
+}
+
+/* end input, select, textarea */
+
+/* wizard and buttons */
+
+.backLinkContainer
+{
+	float:left;
+    background: transparent url(back_arrow.png) no-repeat 20px center;
+}
+
+/* end wizard and buttons */
+
+/* GalleryGridView/GalleryListView (aka IconTitleGallery/IconDescriptionList) DUC styles per skin (other styles are in default) */
+.FieldOptionItem.selected.FOGrid .optionIcon
+{
+    border: 3px solid #87A01F;
+}
+
+.FieldOptionItem:hover
+{
+    color: #87A01F;
+}
+
+.FieldOptionItem.FOGrid.selected .optionTitle
+{
+    color : #87A01F;
+}
+
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////// working XmpieButton styles begin ////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+
+.XmpImageButton
+{
+	height: 21px;
+	border-radius: 5px;
+	margin-right: 5px;
+	padding: 0 10px;
+	font-size:12px;
+	line-height: 21px;
+	text-decoration: none;
+	display: inline-block;
+	font-weight:normal;
+}
+
+.XmpImageButton.TallButton
+{
+	height: 32px;
+}
+
+.XmpieTransparentButton
+{
+	background-color: transparent;
+}
+
+.XmpieThemeColorButton,
+.XmpieDisabledButton,
+.XmpieCancelButton,
+.XmpieRejectButton,
+.XmpieAcceptButton,
+.XmpieApproveButton
+{
+	color: #ffffff !important;
+	text-decoration: none!important;
+}
+
+.XmpieThemeColorButton
+{
+	background-color: #B8DB31;
+	background-image: url(XmpImageButton-Green.svg);
+	background-image: -webkit-linear-gradient(top, #B8DB31 50%, #A9CE1B 50%); 
+	background-image:    -moz-linear-gradient(top, #B8DB31 50%, #A9CE1B 50%); 
+	background-image:     -ms-linear-gradient(top, #B8DB31 50%, #A9CE1B 50%); 
+	background-image:      -o-linear-gradient(top, #B8DB31 50%, #A9CE1B 50%); 
+	background-image:         linear-gradient(top, #B8DB31 50%, #A9CE1B 50%);
+}
+
+.XmpieThemeColorButton:hover, 
+.XmpieThemeColorButton.Hover /*    file submission upload fakeBtn    */
+{
+	background-color: #90AF17;
+	background-image: url(XmpImageButton-GreenHover.svg);
+	background-image: -webkit-linear-gradient(top, rgba(144,175,23,.7) 50%, rgba(107,130,17,.7) 50%); /* #90af17 to #6b8211 with 0.7 opacity */
+	background-image:    -moz-linear-gradient(top, rgba(144,175,23,.7) 50%, rgba(107,130,17,.7) 50%); /* #90af17 to #6b8211 with 0.7 opacity */
+	background-image:     -ms-linear-gradient(top, rgba(144,175,23,.7) 50%, rgba(107,130,17,.7) 50%); /* #90af17 to #6b8211 with 0.7 opacity */
+	background-image:      -o-linear-gradient(top, rgba(144,175,23,.7) 50%, rgba(107,130,17,.7) 50%); /* #90af17 to #6b8211 with 0.7 opacity */
+	background-image:         linear-gradient(top, rgba(144,175,23,.7) 50%, rgba(107,130,17,.7) 50%); /* #90af17 to #6b8211 with 0.7 opacity */
+}
+
+.XmpieThemeColorButton:active
+{    
+	background-color: #B8DB31;
+	background-image: url(XmpImageButton-GreenClick.svg);
+	background-image: -webkit-linear-gradient(top, #90AF17 50%, #6B8211 50%); 
+	background-image:    -moz-linear-gradient(top, #90AF17 50%, #6B8211 50%); 
+	background-image:     -ms-linear-gradient(top, #90AF17 50%, #6B8211 50%); 
+	background-image:      -o-linear-gradient(top, #90AF17 50%, #6B8211 50%); 
+	background-image:         linear-gradient(top, #90AF17 50%, #6B8211 50%);
+}
+
+.XmpieThemeColorButton[disabled],
+.XmpieRejectButton[disabled],
+.XmpieApproveButton[disabled],
+.XmpieBackLink[disabled]
+{
+	background-color: #afafaf !important;
+    background-image: url(XmpImageButton-Disabled.svg) !important;
+    background-image: -webkit-linear-gradient(top, #afafaf 50%, #999999 50%) !important;
+    background-image:    -moz-linear-gradient(top, #afafaf 50%, #999999 50%) !important;
+    background-image:     -ms-linear-gradient(top, #afafaf 50%, #999999 50%) !important;
+    background-image:      -o-linear-gradient(top, #afafaf 50%, #999999 50%) !important;
+    background-image:         linear-gradient(top, #afafaf 50%, #999999 50%) !important;
+}
+
+.XmpImageButton.HideDisabled[disabled],
+.XmpieHiddenButton
+{
+	display: none;
+}
+
+.XmpieClearButton
+{    
+	background-color: transparent;
+	height: 40px;
+	text-decoration: underline !important;
+	padding: 0px!important;
+	font-size: 12px;
+	line-height: 21px;
+	font-weight: bold;
+	color: #333333;
+}
+
+.XmpieBackLink
+{    
+	background-color: transparent;
+	text-decoration: none!important;
+	margin-left: 25px;
+	font-size:11px;
+	font-weight: 500;
+	color: #999999;
+}
+
+.XmpImageButton_ApproveButton
+{
+	
+	background-color: #76a43b;
+	background-image: url(XmpImageButton-StrongGreen.svg);
+	background-image: -webkit-linear-gradient(top, #76a43b 50%, #598839 50%); 
+	background-image:    -moz-linear-gradient(top, #76a43b 50%, #598839 50%); 
+	background-image:     -ms-linear-gradient(top, #76a43b 50%, #598839 50%); 
+	background-image:      -o-linear-gradient(top, #76a43b 50%, #598839 50%); 
+	background-image:         linear-gradient(top, #76a43b 50%, #598839 50%);
+}
+
+.XmpImageButton_ApproveButton:hover
+{
+	background-color: #548036;
+	background-image: url(XmpImageButton-StrongGreenHover.svg);
+	background-image: -webkit-linear-gradient(top, rgba(84,128,54,.7) 50%, rgba(64,98,40,.7) 50%); /* #548036 to #406228 with 0.7 opacity */
+	background-image:    -moz-linear-gradient(top, rgba(84,128,54,.7) 50%, rgba(64,98,40,.7) 50%); /* #548036 to #406228 with 0.7 opacity */
+	background-image:     -ms-linear-gradient(top, rgba(84,128,54,.7) 50%, rgba(64,98,40,.7) 50%); /* #548036 to #406228 with 0.7 opacity */
+	background-image:      -o-linear-gradient(top, rgba(84,128,54,.7) 50%, rgba(64,98,40,.7) 50%); /* #548036 to #406228 with 0.7 opacity */
+	background-image:         linear-gradient(top, rgba(84,128,54,.7) 50%, rgba(64,98,40,.7) 50%); /* #548036 to #406228 with 0.7 opacity */
+}
+
+.XmpImageButton_ApproveButton:active
+{
+	background-color: #548036;
+	background-image: url(XmpImageButton-StrongGreenClick.svg);
+	background-image: -webkit-linear-gradient(top, #548036 50%, #406228 50%);
+	background-image:    -moz-linear-gradient(top, #548036 50%, #406228 50%);
+	background-image:     -ms-linear-gradient(top, #548036 50%, #406228 50%);
+	background-image:      -o-linear-gradient(top, #548036 50%, #406228 50%);
+	background-image:         linear-gradient(top, #548036 50%, #406228 50%);
+}
+
+.XmpieRejectButton
+{    
+	background-color: #f00000;
+	background-image: url(XmpImageButton-Red.svg);
+	background-image: -webkit-linear-gradient(top, #f00000 50%, #cc0000 50%); 
+	background-image:    -moz-linear-gradient(top, #f00000 50%, #cc0000 50%); 
+	background-image:     -ms-linear-gradient(top, #f00000 50%, #cc0000 50%); 
+	background-image:      -o-linear-gradient(top, #f00000 50%, #cc0000 50%); 
+	background-image:         linear-gradient(top, #f00000 50%, #cc0000 50%);
+}
+
+.XmpieRejectButton:hover
+{    
+	background-color: #a30000;
+	background-image: url(XmpImageButton-RedHover.svg);
+	background-image: -webkit-linear-gradient(top, rgba(163,0,0,.7) 50%, rgba(128,0,0,.7) 50%); /* #a30000 to #800000 with 0.7 opacity */
+	background-image:    -moz-linear-gradient(top, rgba(163,0,0,.7) 50%, rgba(128,0,0,.7) 50%); /* #a30000 to #800000 with 0.7 opacity */
+	background-image:     -ms-linear-gradient(top, rgba(163,0,0,.7) 50%, rgba(128,0,0,.7) 50%); /* #a30000 to #800000 with 0.7 opacity */
+	background-image:      -o-linear-gradient(top, rgba(163,0,0,.7) 50%, rgba(128,0,0,.7) 50%); /* #a30000 to #800000 with 0.7 opacity */
+	background-image:         linear-gradient(top, rgba(163,0,0,.7) 50%, rgba(128,0,0,.7) 50%); /* #a30000 to #800000 with 0.7 opacity */
+}
+
+.XmpieRejectButton:active
+{
+	background-color: #a30000;
+	background-image: url(XmpImageButton-RedClick.svg);
+	background-image: -webkit-linear-gradient(top, #a30000 50%, #800000 50%); 
+	background-image:    -moz-linear-gradient(top, #a30000 50%, #800000 50%); 
+	background-image:     -ms-linear-gradient(top, #a30000 50%, #800000 50%); 
+	background-image:      -o-linear-gradient(top, #a30000 50%, #800000 50%); 
+	background-image:         linear-gradient(top, #a30000 50%, #800000 50%); 
+}
+
+.XmpieClearButton_LinkStyle, .options
+{
+	text-decoration: underline !important;
+	padding: 0px!important;
+	font-size:12px;
+	line-height: 21px;
+	font-weight: bold;
+	color: #333333;
+}
+
+.XmpieDisabledButton, .XmpieCancelButton
+{
+	background-color: #afafaf;
+	background-image: url(XmpImageButton-Default.svg);
+	background-image: -webkit-linear-gradient(top, #afafaf 50%, #999999 50%); 
+	background-image:    -moz-linear-gradient(top, #afafaf 50%, #999999 50%); 
+	background-image:     -ms-linear-gradient(top, #afafaf 50%, #999999 50%); 
+	background-image:      -o-linear-gradient(top, #afafaf 50%, #999999 50%); 
+	background-image:         linear-gradient(top, #afafaf 50%, #999999 50%);
+}
+
+
+
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////// working XmpieButton styles end //////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+

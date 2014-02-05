@@ -1,0 +1,118 @@
+﻿/* ------------ uploadify custom styling  START ------------*/
+
+.uploadifyQueue .completed {
+	background-color: #E3F1AF !important;
+	-webkit-border-radius: 3px; 
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+
+.uploadifyProgressBar {
+	background-color: #98AF3B !important;
+}
+
+.uploadifyQueue
+{
+    position: relative;
+    left: -310px; /*according to textbox width*/
+    top: -29px;
+}
+.uploadifyQueueItem 
+{
+    padding: 5px !important;
+    width: 290px !important; /*according to textbox width*/
+}
+
+/* ------------ uploadify custom styling  END ------------*/
+
+#divUploadWrapper
+{
+    text-align: left;
+    padding: 18px;
+}
+
+.dialogTitle
+{
+    font-weight:bold;
+}
+
+#tbUploadedFile
+{
+    width: 300px;   /*other styles depend on this style:div.UploadifyButtonWrapper,uploadifyQueueItem,uploadifyQueue*/
+}
+
+.imgClose
+{
+    float:right;
+}
+           
+/* ------------ hide flash button START ----------------- */
+/* Taken from here:*/
+/* http://stackoverflow.com/questions/2483662/uploadify-button-style-with-css */
+div.UploadifyButtonWrapper{
+    position: relative;
+    left: 300px;    /*according to textbox width*/
+    margin-left: 10px;
+    top: -24px;
+}
+
+div.UploadifyButtonWrapper #fakeBtn {
+    position:absolute; /* relative to UploadifyButtonWrapper */
+    top:0;
+    left:0;
+    z-index:0;
+    display:block;
+    float:left;
+}
+
+div.UploadifyObjectWrapper {
+    position:relative;
+    z-index:10;
+}
+
+/* ------------ hide flash button END ----------------- */
+
+.divSlidesOption
+{
+    margin-left:auto;
+	margin-right:auto;
+	float:left;
+	cursor: pointer;
+	text-align:center;
+}
+.divSlidesOption.hover
+{
+    font-weight:bold;
+}
+.divSlidesOption.selected
+{
+    color: #87A01F;
+    font-weight:bold;
+}
+.divSlidesOption .divImgOption
+{
+    -moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	border: solid 3px #ffffff;
+	margin-right:5px;
+}
+.divSlidesOption.selected .divImgOption
+{
+	border-color: #87A01F;
+}
+#divSlidesPerPage
+{
+    padding: 18px;
+    text-align: left;
+}
+
+#btnSlidesSelect
+{
+    float:right;
+}
+
+.fileUploadDialog
+{
+    border-radius: 20px;
+}

@@ -1,0 +1,111 @@
+/*
+321 +
+
+*/
+
+// HOME
+
+// Slider
+.elastislide-list {
+
+		
+	p {
+
+	}
+	
+	strong {
+
+	}
+	
+	em {
+
+	}
+
+	
+	a {
+	&:hover {
+			p { 
+				}
+			
+			img {
+			
+			}
+		
+		}// hover
+	
+	}// a
+	
+}//elastislide-list
+
+
+
+
+//FOOTER
+$corner-dot-size: 6px;
+.menu-list {
+	position: relative;
+	width: 32%;
+	border-bottom: none;
+	float: left;
+	padding: ($margin / 2) 0 $margin $margin;
+	margin: 0 0 0 0;
+	border-right: 1px dashed $tan;
+	&.social {
+		border-right: none;
+	}
+	&.sign-up {
+		width: 100%;
+		border-top: 1px dashed $tan;
+	}
+	&:first-child {
+		margin: 0;
+		padding: ($margin / 2) 0 $margin 0;
+	}
+	&:last-child {
+		border-right: none;
+	}//last-child
+
+	h2 {
+		font-size: .9em;
+		text-transform: uppercase;
+		margin: 0;
+	}
+	ul { 
+		list-style-type: none;
+		margin: 0;
+	}
+
+	li {
+	
+	}
+	
+form {
+	margin: 0;
+		label {
+		font-size: .9em;
+		letter-spacing: .05em;
+		text-transform: uppercase;
+		margin: 0 0 .4em;
+		line-height: 1.231;
+		font-family: "Bree Serif", sans-serif;
+		color: #363230;
+		font-weight: normal;
+		display: block;
+		word-wrap: normal;
+		}
+	}
+
+
+}// menu-list
+
+
+
+// BLOG STYLINGS
+
+.blog-thumb {
+	img {
+		width: 55%;
+		margin: 0 $margin 0 0;
+	}
+}
+

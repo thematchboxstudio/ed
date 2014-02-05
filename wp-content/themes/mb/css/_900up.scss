@@ -1,0 +1,46 @@
+/*
+768 -> 1200
+
+*/
+
+
+// NAV
+#header #navigation ul.nav {
+margin-left: 0;
+}
+#header #navigation ul.nav > li a {
+	font-size: 27px;
+	margin: 0 .5em;
+}
+#header #navigation #main-nav > li > a:first-child {
+	margin: 0 .5em;
+}
+ul.nav ul {        // SUB NAV HERE
+  width: 15.379em;
+	li {
+		border-bottom: none;
+	}
+}
+#header #navigation ul.nav ul li a {  // SUB NAV LINKS
+  font-size: 12px;
+	  &:before {
+	  	content: "\00BB";
+	  	font-size: 15px;
+	  	margin: 0 5px 0 0;
+	  	}
+	}
+
+
+// PRODUCTS
+ul.products li.product {
+	width: 30.5%;
+	margin-right: $margin;
+	}
+
+// Cart
+  table.cart td.actions .input-text,
+  table.cart td.actions .button,
+  table.cart td.actions .checkout-button {
+
+    margin-bottom: 0 !important;
+  }

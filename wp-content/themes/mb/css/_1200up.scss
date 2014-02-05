@@ -1,0 +1,61 @@
+/*
+1200 +
+
+*/
+
+$arrow-size: 40px;
+.elastislide-prev{
+	width: 0; 
+	height: 0; 
+	border-top: $arrow-size solid transparent;
+	border-bottom: $arrow-size solid transparent; 
+	border-right: $arrow-size solid $black; 
+}
+.elastislide-next {
+	width: 0; 
+	height: 0; 
+	border-top: $arrow-size solid transparent;
+	border-bottom: $arrow-size solid transparent;
+	border-left: $arrow-size solid $black;
+}
+.elastislide-horizontal nav span {
+	top: 40%;
+	left: 15%;
+	margin-top: -11px;
+}
+.elastislide-horizontal nav span.elastislide-next {
+	right: 15%;
+	left: auto;
+	background-position: 4px -17px;
+}
+.elastislide-horizontal ul {
+	margin-left: 280px;
+}
+.elastislide-wrapper.elastislide-horizontal:before
+	{$experimental-support-for-svg: true;
+	 @include background-image(linear-gradient(left, rgba(255, 255, 255, .95) 0%, rgba(255, 255, 255, .9) 75%, rgba(255, 255, 255, .7) 85%, rgba(255, 255, 255, .5) 90%, rgba(255, 255, 255, 0)));
+	content: "";
+	position: absolute;
+	height: 100%;
+	width: 275px;
+	top: 0;
+	z-index: 1;
+}
+.elastislide-wrapper.elastislide-horizontal:after
+	{$experimental-support-for-svg: true;
+	  @include background-image(linear-gradient(left, rgba(255, 255, 255, 0), rgba(255, 255, 255, .5) 10%, rgba(255, 255, 255, .7) 15%, rgba(255, 255, 255, .9) 25%, rgba(255, 255, 255, .95) 100%));
+	content: "";
+	position: absolute;
+	height: 100%;
+	width: 250px;
+	top: 0;
+	z-index: 1;
+}
+.elastislide-wrapper.elastislide-horizontal:before
+{
+left: 0;
+}
+.elastislide-wrapper.elastislide-horizontal:after,
+{
+right: 0;
+}

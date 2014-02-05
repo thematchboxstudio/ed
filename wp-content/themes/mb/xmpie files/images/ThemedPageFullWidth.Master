@@ -1,0 +1,57 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="ThemedPageFullWidth.master.cs" Inherits="uStore.PageLayout.ThemedPageFullWidth" %>
+<%@ Register TagPrefix="uStore" TagName="MetaTags" Src="~/UControls/MetaTags.ascx" %>
+
+<!doctype html>
+<html>
+<head>
+    <uStore:MetaTags ID="MetaTags" runat="server" />
+    <link href="<%= DefaultStylePath %>" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="<%= StoreStyle %>" type="text/css" />
+    <link rel="stylesheet" href="<%= StoreStylePath %>RadSkins/Default/Grid.Default.css" type="text/css" />    
+    <link rel="stylesheet" href="<%= StoreStylePath %>RadSkins/Default/TreeView.Default.css" type="text/css" />    
+    <link rel="stylesheet" href="<%= StoreStylePath %>RadSkins/Default/Calendar.Default.css" type="text/css" /> 
+    <link rel="stylesheet" href="<%= StoreStylePath %>RadSkins/Default/Menu.Default.css" type="text/css" /> 
+    <link rel="stylesheet" href="<%= StorejQueryStyle %>" type="text/css" />
+    <asp:ContentPlaceHolder ID="cphHtmlHeader" runat="server"></asp:ContentPlaceHolder>
+    <title></title> 
+</head>
+<body>
+    <asp:PlaceHolder ID="plhWaitingDiv" runat="server"></asp:PlaceHolder>
+    <script type="text/javascript" src="<%= ScriptsPath %>" ></script>
+    <form id="form1" runat="server">
+        <asp:ScriptManager ID="scriptManager" runat="server" EnablePageMethods="true"></asp:ScriptManager>
+
+        <div id="fullpage" class="ThemedPagedFullWidthMaster">
+            <div id="logo"></div>
+            
+            <%--<asp:ContentPlaceHolder ID="cphStandardHeader" runat="server"></asp:ContentPlaceHolder>
+
+            <asp:ContentPlaceHolder ID="cphWelcome" runat="server"></asp:ContentPlaceHolder>
+                            
+            <asp:ContentPlaceHolder ID="cphFlags" runat="server"></asp:ContentPlaceHolder>
+
+            <asp:ContentPlaceHolder ID="cphCurrency" runat="server"></asp:ContentPlaceHolder>--%>
+
+            <asp:ContentPlaceHolder ID="cphCustomHeader" runat="server"></asp:ContentPlaceHolder>
+
+            <div id="searcharea">
+                <div class="subtitle"><%= PageSubTitle %></div>
+                <asp:ContentPlaceHolder ID="cphProductSearch" runat="server"></asp:ContentPlaceHolder>                    
+            </div>
+
+            <div class="mainareaFullWidth">
+                <asp:ContentPlaceHolder ID="cphMainContent" runat="server"></asp:ContentPlaceHolder>
+            </div>
+
+            <div class="mainAreaFooterFullWidth">
+                <asp:ContentPlaceHolder ID="cphMainContentFooter" runat="server"></asp:ContentPlaceHolder>
+            </div>
+            
+            <!-- Footer Area Start -->            
+            <div id="masterPageFooter" class="clearfloat"></div>            
+            <asp:ContentPlaceHolder ID="cphCustomFooter" runat="server"></asp:ContentPlaceHolder>            
+            <div id="postFooter"></div>
+        </div>
+    </form>    
+</body>
+</html>

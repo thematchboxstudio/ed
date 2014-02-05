@@ -1,0 +1,47 @@
+/*
+
+CALCULATING DIMENSIONS:
+----------------------
+The layout is fluid. The sote wrapper (.col-full) has a fixed pixel max-width.
+All subsequent dimensions are calculated based on that fixed pixel width, using the formula: target / context = result
+Credit - http://www.alistapart.com/articles/fluidgrids/
+
+-----
+INDEX
+-----
+
+1. Global dropdown styles
+2. Top Navigation
+3. Main navigation dropdown menus
+ -3.1 General dropdown menus
+4. General layout
+5. WOOCOMMERCE
+-5.1 Messages
+-5.2 Products
+  -5.2.1 Single Product
+-5.3 Cart
+-5.4 Checkout
+-5.5 Widgets
+-5.6 Account
+-5.7 Shortcodes
+6. Footer widgets
+7. IE Fixes
+
+*/
+/*----------------------*/
+@import "compass";
+@import "mixins";
+/*----------------------*/
+@import "base";
+@media only screen and (min-width: 321px) {
+	@import "321up";
+}// 321 MQ
+@media only screen and (min-width: 768px) {
+	@import "768up";
+}// 768 MQ
+@media only screen and (min-width: 900px) {
+	@import "900up";
+}// 768-900 MQ
+@media only screen and (min-width: 1200px) {
+	@import "1200up";
+}// 1200 MQ
